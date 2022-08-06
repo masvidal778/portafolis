@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+    <title>Exercicis del CFGS</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="row" style="height: 5em;">
+    <div class="col-3 text-center mt-4">
+        <button><a href="index.html">Inici</a></button>
+    </div>
+    <nav class="col-9 mt-4">
+        <button><a href="exercicis-cfgs.html">Exercicis CFGS DAW</a></button>
+        <button><a href="practica.html">Pràctica pròpia</a></button>
+        <button><a href="projecte.html">Projecte</a></button>
+    </nav>
+    </div>
+</header>
+
+<main>
+    <div class="row">
+        <h2 class="text-center mt-5">Desenvolupament web en entorn client</h2>
+        <h3>Algunes mostres d'exercicis fets amb JavaScript al CFGS de DAW de l'Insitut Obert de Catalunya.</h3>
+        <article class="col-6">
+            <ul>
+                <li>
+                    <button onclick="majuscules()" type="button">Majúscules</button>
+                </li>
+                <li>
+                    <button onclick="aillarNum()" type="button">Aillar números de lletres</button>
+                </li>
+                <li>
+
+                    <button onclick="ordenacioInv()" type="button">Ordenació alfabètica inversa</button>
+                </li>
+                <li>
+                    <button type="button"><a href="finestresmarefilla.html">Treball amb finestres emergents</a></button>
+                </li>
+                <li>
+                    <button type="button"><a href="finestresmarefilla.html">Treball amb finestres emergents</a></button>
+                </li>
+            </ul>
+        </article>
+        <article class="col-6">
+            <h4>Taula de multiplicar</h4>
+            <p>Fem la taula del <input id="nombre" type="text"> </p>
+                <button type="button" onclick="multipliquem()">Multipliquem!</button>
+            <p id="resultat"></p>
+            <h4>Canviar elements entre desplegables</h4>
+            <p>
+                <select id="desplegable1">
+                    <option value="0">Manresa</option>
+                    <option value="0">Reus</option>
+                    <option value="0">Vic</option>
+                </select>
+                <button type="button" onclick="moure1()">&gt;&gt;</button>
+                <button type="button" onclick="moure2()">&lt;&lt;</button>
+                <select id="desplegable2"></select>
+            </p>
+            <button type="button" onclick="reiniciar()">Reiniciar</button>
+        </article>
+    </div>
+
+    <div class="row">
+        <h2 class="text-center mt-5">Interfícies web</h2>
+        <article class="col-6">
+            <img alt="Imatge de mostra del lloc web espectacat" src="imatges/espectacat.png">
+            <h3>Lloc web d'espectacles</h3>
+            <p>L'exercici consistia a crear un lloc web fent servir <b>HTML5, CSS i Bootstrap</b> sobre Espectacles,
+                amb una pàgina inicial, que estigués
+                enllaçada a una pàgina de mostra d'algun dels articles, alguna notícia... El meu lloc web té una pàgina
+                inicial, pàgines d'exemple d'espectacles (amb les seves pàgines de detall), dues o tres notícies (amb
+                les pàgines de detall), una pàgina d'inici de sessió, de registre, de contacte i de compra
+                d'entrades.</p>
+            <a href="https://masvidal778.github.io/eaf1M09IOC/">Aquí anirà l'enllaç a Espectacat (prèviament pujat a Github)</a>
+        </article>
+        <article class="col-6">
+            <img alt="Imatge de mostra de la playlist" src="imatges/playlist.png">
+            <h3>Playlist de vídeo</h3>
+            <p>En el següent exercici ens van fer afegir al lloc web una playlist fent servir <b>NO HO RECORDO</b>. Vaig
+                afegir-ho a una de les pàgines del lloc web dels Espectacles, però aquí la posaré a part, perquè es vegi
+                amb més comoditat. Ja que el lloc web no estava pensat per dur la playlist integrada.</p>
+            <a href="#">Aquí anirà l'enllaç a la pàgina de la playlist (prèviament pujat a Github)</a>
+        </article>
+        <article class="col-6">
+            <img alt="" src="imatges/grafica.png">
+            <h3>Gràfica</h3>
+            <p>En el següent exercici ens van fer afegir al lloc web una gràfica fent servir <b>charts.js</b>. Vaig
+                afegir-ho a una de les pàgines del lloc web dels Espectacles, però aquí el posaré a part, perquè es vegi
+                amb més comoditat. Ja que el lloc web no estava pensat per dur la gràfica integrada.</p>
+            <a href="#">Aquí anirà l'enllaç a la pàgina del gràfic (prèviament pujat a Github)</a>
+        </article>
+    </div>
+</main>
+
+<div class="text-center">
+    <button class="pujar">Pujar</button>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

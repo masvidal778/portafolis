@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Exercici 7</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header class="row" style="height: 5em;">
+    <div class="col-3 text-center mt-4">
+        <button><a href="index.html">Inici</a></button>
+    </div>
+    <nav class="col-9 mt-4">
+        <button><a href="curriculum.html">Currículum</a></button>
+        <button><a href="exercicis-cfgs.html">Exercicis CFGS DAW</a></button>
+        <button><a href="#">Pràctica pròpia</a></button>
+        <button><a href="#">Projecte</a></button>
+    </nav>
+    </div>
+</header>
+<h1>Creador de frases</h1>
+<p>
+    <input type="button" value="Obrir finestra filla" onclick="obreFinestra()"/>
+    <input type="button" value="Tancar finestra filla" onclick="tancaFinestra()"/>
+</p>
+<p>
+    Subjecte: <select id="subjecte">
+    <option value="0">La rateta</option>
+    <option value="0">El Girona</option>
+    <option value="0">La Maria</option>
+</select>
+    Verb: <select id="verb">
+    <option value="0">escombra</option>
+    <option value="0">guanya</option>
+    <option value="0">compra</option>
+</select>
+    Complement: <select id="complement">
+    <option value="0">l'escaleta</option>
+    <option value="0">el Barça</option>
+    <option value="0">un cotxe</option>
+</select>
+</p>
+<p>
+    <input type="button" value="Genera frase" onclick="genera()"/>
+    <input type="button" value="Tindré sort!" onclick="tindre_sort()"/>
+</p>
+<script src="js/finestresemergents.js"></script>
+</body>
+</html>
