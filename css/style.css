@@ -14,18 +14,15 @@ header, aside {
     background-color: #b92b2b;
 }
 
-aside {
-    color: black;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: white;
     margin-left: 3em;
     margin-top: 1em;
 }
 
-table, p{
+table, p {
     color: white;
+    text-align: justify;
 }
 
 button, input {
@@ -38,20 +35,24 @@ ul {
     list-style-type: none;
 }
 
+li {
+    color: white;
+}
+
 .graella {
     background-color: darkred;
 }
 
 .pujar {
-    display:none;
-    padding:20px;
-    background:darkred;
-    font-size:20px;
-    color:#fff;
-    cursor:pointer;
+    display: none;
+    padding: 20px;
+    background: darkred;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
     position: fixed;
-    bottom:20px;
-    right:20px;
+    bottom: 20px;
+    right: 20px;
 }
 
 img {
@@ -61,17 +62,21 @@ img {
     margin-left: 2em;
 }
 
+h3, p, a {
+    margin-left: 2em;
+}
+
 a {
     color: white;
 }
 
-h3, p, a{
-    margin-left: 2em;
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: white;
 }
 
-button a {
-    margin: 1em;
-    color: black;
+a:hover {
+    color: #8A9597;
 }
 
 /* Formularis */
@@ -80,9 +85,17 @@ input {
     border-radius: 7px;
 }
 
+input[type=text]{
+    width: 80%;!important;
+}
+
 input[type=text]:focus {
     background-color: lightgray;
     border-radius: 7px;
+}
+
+input[type=email]{
+    width: 80%;!important;
 }
 
 label {
@@ -96,6 +109,6 @@ select {
     background-color: lightgray;
 }
 
-.checkbox, .radio, .textarea{
+.checkbox, .radio, .textarea {
     margin: 2em;
 }

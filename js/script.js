@@ -56,24 +56,6 @@ function ordenacioInv(){
 }
 
 
-    function multipliquem() {
-
-        let nombre;
-        nombre = parseInt(document.getElementById("nombre").value);
-
-        if (nombre.length==0 || isNaN(nombre) || (nombre < 1) || (nombre > 10)) {
-            alert("Has d'entrar un nombre entre 1 i 10");
-        } else {
-            let resposta = "";
-            for (let i = 0; i <= 10; i++) {
-                let producte = nombre * i;
-                resposta += `${nombre} x ${i} = ${producte}<br/>`;
-            }
-            document.getElementById("resultat").innerHTML = resposta;
-        }
-
-}
-
 //Desplegables
 
 const desplegable1 = document.getElementById("desplegable1");

@@ -6,26 +6,44 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     <title>Exercicis del CFGS</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<header class="row" style="height: 5em;">
-    <div class="col-3 text-center mt-4">
-        <button><a href="index.html">Inici</a></button>
-    </div>
-    <nav class="col-9 mt-4">
-        <button><a href="exercicis-cfgs.html">Exercicis CFGS DAW</a></button>
-        <button><a href="practica.html">Pràctica pròpia</a></button>
-    </nav>
-    </div>
-</header>
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex d-none">
+                <button class="navbar-toggler display-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                    <li class="nav-item"><a href="index.html">Inici</a></li>
+                    <li class="nav-item"><a href="exercicis-cfgs.html">Exercicis CFGS DAW IOC</a></li>
+                    <li class="nav-item"><a href="practica.html">Pràctica</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 <main>
     <div class="row">
-        <h2 class="text-center mt-5">Desenvolupament web en entorn client</h2>
-        <h3>Algunes mostres d'exercicis fets amb JavaScript al CFGS de DAW de l'Insitut Obert de Catalunya.</h3>
-        <article class="col-6">
+        <article class="col-12 col-sm-12 col-md-6">
+            <h2 class="text-center mt-5">Desenvolupament web en entorn client</h2>
+            <p>Algunes mostres d'exercicis fets amb JavaScript al CFGS de DAW de l'Insitut Obert de Catalunya.</p>
             <ul>
                 <li>
                     <button onclick="majuscules()" type="button">Majúscules</button>
@@ -45,7 +63,7 @@
                 </li>
             </ul>
         </article>
-        <article class="col-6">
+        <article class="col-12 col-sm-12 col-md-6">
             <h4>Taula de multiplicar</h4>
             <p>Fem la taula del <input id="nombre" type="text"></p>
             <button type="button" onclick="multipliquem()">Multipliquem!</button>
@@ -67,8 +85,9 @@
 
     <div class="row">
         <h2 class="text-center mt-5">Interfícies web</h2>
-        <article class="col-6">
-            <img alt="Imatge de mostra del lloc web espectacat" src="imatges/espectacat.png">
+        <article class="col-12 col-sm-12 col-md-6">
+            <img alt="Imatge de mostra del lloc web espectacat" src="imatges/espectacat.png"
+                 class="img-fluid max-width: 100% height: auto">
             <h3>Lloc web d'espectacles</h3>
             <p>L'exercici consistia a crear un lloc web fent servir <b>HTML5, CSS i Bootstrap</b> sobre Espectacles,
                 amb una pàgina inicial, que estigués
@@ -79,8 +98,9 @@
             <a href="https://masvidal778.github.io/eaf1M09IOC/">Visita el lloc web</a>
         </article>
 
-        <article class="col-6">
-            <img alt="Imatge de mostra de la playlist" src="imatges/playlist.png">
+        <article class="col-12 col-sm-12 col-md-6">
+            <img alt="Imatge de mostra de la playlist" src="imatges/playlist.png"
+                 class="img-fluid max-width: 100% height: auto">
             <h3>EAF2 M09 (continuació EAF1 de creació d'un lloc web)</h3>
             <p>En el següent exercici ens van fer afegir al lloc web una playlist fent servir <b>jPlayer</b>;
                 transicions i animacions amb css; una gràfica i un gif (al lateral dret, a l'apartat de publicitat).</p>

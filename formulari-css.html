@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"></script>
+    <title>Formulari CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex d-none">
+        <button class="navbar-toggler display-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+          <li class="nav-item"><a href="index.html">Inici</a></li>
+          <li class="nav-item"><a href="exercicis-cfgs.html">Exercicis CFGS DAW IOC</a></li>
+          <li class="nav-item"><a href="practica.html">Pràctica</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<article class="col-12 col-sm-12 col-md-6">
+  <h2>Formulari amb CSS</h2>
+  <form action="#" role="form" method="post">
+    <label for="name">Nom</label>
+    <input type="text" id="name" autofocus="autofocus"><br>
+    <label for="surname">Cognoms</label>
+    <input type="text" id="surname"><br>
+    <label for="telefon">Telèfon</label>
+    <input type="text" id="telefon"><br>
+    <label for="mail">Correu electrònic</label>
+    <input type="text" id="mail"><br>
+    <p class="radio">
+      Sexe:<br>
+      <input type="radio" id="dona" name="sexe" value="dona">
+      <label for="dona">Dona</label>
+      <input type="radio" id="home" name="sexe" value="home">
+      <label for="home">Home</label>
+      <input type="radio" id="no_binari" name="sexe" value="no_binari">
+      <label for="no_binari">No binari</label>
+    </p>
+    <p class="checkbox">
+      Interessos:<br>
+      <input type="checkbox" id="llegir" value="llegir">
+      <label for="llegir">Llegir</label>
+      <input type="checkbox" id="viatjar" value="viatjar">
+      <label for="viatjar">Viatjar</label><br>
+      <input type="checkbox" id="amics" Value="amics">
+      <label for="amics">Amics</label>
+      <input type="checkbox" id="musica" Value="musica">
+      <label for="musica">Música</label><br>
+      <input type="checkbox" id="cinema" Value="cinema">
+      <label for="cinema">Cinema</label>
+      <input type="checkbox" id="series" Value="series">
+      <label for="series">Sèries</label><br>
+    </p>
+    <p>
+      <label for="novetats">Per on vols rebre les novetats?</label><br>
+      <select name="novetats" id="novetats">
+        <option value="seleccioni">Seleccioni una opció</option>
+        <option value="correu">Correu electrònic</option>
+        <option value="whatsapp">Whatsapp</option>
+        <option value="sms">SMS</option>
+      </select>
+    </p>
+    <p class="textarea">
+      <textarea name="comentari" id="comentari" cols="30" rows="10">Escriu aquí els teus comentaris o suggeriments...</textarea>
+    </p>
+    <input type="submit" value="Enviar">
+  </form>
+</article>
+<div>
+  <button class="pujar">Pujar</button>
+</div>
+</body>
+</html>
